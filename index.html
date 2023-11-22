@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ACME Pharmaceutical LTD - Dosage Calculator</title>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <section class="content-wrapper">
+    <img src="images/logo.svg" />
+    <h1>Galanpirox calculator</h1>
+
+    <p>The Dosage Calculator is a supportive tool designed to provide guidance to healthcare professionals on how to achieve the intended prescribed daily dose using 75 mg and/or 150 mg tablets of Galanpirox when prescribing for your patients.</p>
+
+    <p>As this is a support tool, healthcare professionals must use their own professional judgement and consult the relevant supporting documentation for Galanpirox before making clinical and dosing decisions.</p>
+
+    <p>ACME Pharmaceutical LTD accepts no liability for any clinical decisions made in association with the use of this tool.</p>
+
+    <section class="calculator">
+      <h4 class="title">Calculate<span>Galanpirox Dosage</span></h4>
+
+      <h5 class="heading">What daily dose of Galanpirox would you like to prescribe?</h5>
+
+      <div class="button-wrapper">
+        <label><input type="radio" name="dailyDosages" value="75">75 mg</label>
+        <label><input type="radio" name="dailyDosages" value="150">150 mg</label>
+        <label><input type="radio" name="dailyDosages" value="225">225 mg</label>
+        <label><input type="radio" name="dailyDosages" value="300">300 mg</label>
+        <label><input type="radio" name="dailyDosages" value="375">375 mg</label>
+        <label><input type="radio" name="dailyDosages" value="450">450 mg</label>
+      </div>
+
+      <h5 class="heading">How many days should Galanpirox be administered?</h5>
+      <div class="button-wrapper">
+        <label><input type="radio" name="administerFrequency" value="7">7</label>
+        <label><input type="radio" name="administerFrequency" value="8">8</label>
+        <label><input type="radio" name="administerFrequency" value="9">9</label>
+        <label><input type="radio" name="administerFrequency" value="10">10</label>
+        <label><input type="radio" name="administerFrequency" value="11">11</label>
+        <label><input type="radio" name="administerFrequency" value="12">12</label>
+        <label><input type="radio" name="administerFrequency" value="13">13</label>
+        <label><input type="radio" name="administerFrequency" value="14">14</label>
+      </div>
+    </section>
+
+    <section class="results">
+      <h4>Results</h4>
+      <div class="results-wrapper">
+        <div class="total-dosage">
+          <h5 class="result-header">Total dosage</h5>
+          <p class="result-value">mg</p>
+        </div>
+        <div class="perscription-total">
+          <h5 class="result-header">Prescription total</h5>
+          <div class="result-value">
+            <div class="value">mg</div>
+            <div class="dosage-strength">x 150 mg</div>
+          </div>
+          <div class="result-value">
+            <div class="value">mg</div>
+            <div class="dosage-strength">x 75 mg</div>
+          </div>
+        </div>
+        <div class="resultsValues">
+          <h5 class="result-header">Daily dose for patient</h5>
+          <div class="result-value">
+            <div class="value">mg</div>
+            <div class="dosage-strength">x 150 mg</div>
+          </div>
+          <div class="result-value">
+            <div class="value">mg</div>
+            <div class="dosage-strength">x 75 mg</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
