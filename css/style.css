@@ -28,3 +28,9 @@ body {
   align-items: center;
   width: 18%;
 }
+
+.horizonal-line {
+  background-color: #3cb2d2;
+  height: 0.5rem;
+  border-radius: 10px 10px 0px 0px;
+}
