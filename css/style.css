@@ -12,5 +12,11 @@ body {
 }
 
 .content-wrapper {
+  display: flex;
+  flex-direction: column;
   max-width: 800px;
+}
+
+.logo {
+  width: 30%;
 }
