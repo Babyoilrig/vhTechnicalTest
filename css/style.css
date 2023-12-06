@@ -34,3 +34,18 @@ body {
   height: 0.5rem;
   border-radius: 10px 10px 0px 0px;
 }
+
+.calculator {
+  margin-left: 1.5rem;
+}
+
+/* .title-calculate {
+  font-family: "Inter Var" sans-serif;
+  font-weight: light;
+  
+} */
+
+
+.results {
+  margin-left: 1.5rem;
+}
