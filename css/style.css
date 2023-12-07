@@ -111,8 +111,19 @@ body {
 
 .dark-orange-div {
   background-color: #cb6540;
+  margin-bottom: 0.5rem;
+  width: 6rem;
+  border-width: 5em;
+  border-color: black;
+  border-radius: 5px;
+  padding: 0.3rem;
 }
 
 .light-orange-div {
   background-color: #d49b3e;
+  width: 6rem;
+  border-width: 5em;
+  border-color: black;
+  border-radius: 5px;
+  padding: 0.3rem;
 }
