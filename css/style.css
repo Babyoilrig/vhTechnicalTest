@@ -50,6 +50,14 @@ body {
   font-size: 1.1rem;
 }
 
+.button-wrapper1 button {
+  background-color: white;
+  border-color: #CDCDCD;
+  border-width: 1px;
+  border-radius: 15%;
+  padding: 5px;
+}
+
 .heading-administered {
   color: #3cb2d2; 
   font-size: 1.1rem;
