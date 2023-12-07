@@ -83,5 +83,8 @@ body {
 
 
 .results {
+  background-color: #3cb2d2;
+  margin-top: 1rem;
   margin-left: 1.5rem;
+  border-radius: 10px;
 }
