@@ -89,7 +89,9 @@ body {
   border-radius: 10px;
   color: white;
   padding-left: 1rem;
+  padding-bottom: 1rem;
   font-size: 20px;
+  font-weight: 200;
 }
 
 .results-wrapper {
@@ -105,4 +107,12 @@ body {
   margin-right: 1rem;
   margin-top: 1.5rem;
 
+}
+
+.dark-orange-div {
+  background-color: #cb6540;
+}
+
+.light-orange-div {
+  background-color: #d49b3e;
 }
