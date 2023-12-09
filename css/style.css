@@ -133,9 +133,6 @@ body {
 
 .container1 {
   width: 8rem;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 .total-dosage {
@@ -209,15 +206,27 @@ body {
  
 }
 
-.value-container {
+.value-container-top {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: 1rem;
-  margin: 0;
+  padding-right: 0 20px 5px 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
   line-height: 5px;
-  /* padding-bottom: 10px; */
+
+}
+
+.value-container-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 0 5px;
+  margin-right: 8px 5px 0 0;
+  line-height: 5px;
+  
 
 }
 
@@ -227,7 +236,8 @@ body {
 }
 
 .total {
-  margin: -5px 0 0 0 ;
+  margin: 0 2px 10px 0 ;
+  line-height: 5px;
 }
 
 
