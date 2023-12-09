@@ -52,7 +52,7 @@ body {
 
 .heading-dose2 {
   color: #3cb2d2; 
-  font-size: 1.1rem;
+  font-size: 16px;
   margin: 1rem 1rem 0.5rem 0;
 }
 
@@ -67,7 +67,7 @@ body {
   border-width: 0.5px;
   border-radius: 12%;
   padding: 5px;
-  font-size: 16px;
+  font-size: 15px;
   /* margin-top: 1rem; */
 }
 
@@ -91,7 +91,8 @@ body {
 
 .heading-administered {
   color: #3cb2d2; 
-  font-size: 1.1rem;
+  font-size: 16px;
+  margin: 1rem 1rem 0.5rem 0;
 
 }
 
@@ -120,11 +121,24 @@ body {
 
 }
 
-.container1 {
-  width: 12rem;
+.results-title {
+  margin: 23px 0 0 0;
 }
 
-.spacer-div {
+.container1 {
+  width: 8rem;
+}
+
+.container2 {
+  width: 9rem;
+  padding-right: 0.8rem;
+}
+
+.container3 {
+  padding-left: 1rem;
+}
+
+.spacer {
   background-color: red;
   width: 20rem;
 }
@@ -142,25 +156,33 @@ body {
 }
 
 .dark-orange-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #cb6540;
-  width: 5rem;
+  width: 4rem;
   height: 2rem;
   border-style: solid;
   border-width: 1px;
   border-color: white;
   border-radius: 8px;
-  padding: 10px 0 0 10px;
+  font-size: 16px;
 }
 
 .light-orange-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #d49b3e;
-  width: 5rem;
+  width: 4rem;
   height: 2rem;
   border-style: solid;
   border-width: 1px;
   border-color: white;
   border-radius: 8px;
-  padding: 10px 0 0 10px;
+  font-size: 16px;
 }
 
 .result-value {
