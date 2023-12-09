@@ -72,7 +72,8 @@ body {
 }
 
 .dosage-div button:hover {
-  background-color: #3cb2d2; 
+  background-color: #3cb2d2;
+  color: white; 
 }
 
 .administered-div button {
@@ -87,6 +88,7 @@ body {
 
 .administered-div button:hover {
   background-color: #3cb2d2; 
+  color: white; 
 }
 
 .heading-administered {
