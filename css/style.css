@@ -128,6 +128,9 @@ body {
   padding: 0.3rem;
 }
 
-.value-150 {
-  background-color: blue;
+.result-value {
+  display: flex;
+  flex-direction: row;
+
 }
+
