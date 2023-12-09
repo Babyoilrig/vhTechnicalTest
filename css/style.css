@@ -112,7 +112,7 @@ body {
 .dark-orange-div {
   background-color: #cb6540;
   margin-bottom: 0.5rem;
-  width: 6rem;
+  width: 5rem;
   border-width: 5em;
   border-color: black;
   border-radius: 5px;
@@ -121,7 +121,7 @@ body {
 
 .light-orange-div {
   background-color: #d49b3e;
-  width: 6rem;
+  width: 5rem;
   border-width: 5em;
   border-color: black;
   border-radius: 5px;
@@ -131,6 +131,18 @@ body {
 .result-value {
   display: flex;
   flex-direction: row;
-
+  background-color: red;
 }
+
+/* .value-container {
+  width: 2rem;
+} */
+
+
+
+.thin-white-writing {
+  font-weight: 300;
+}
+
+
 
