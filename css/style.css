@@ -127,12 +127,12 @@ body {
 
 .results-header {
   line-height: 2px;
+  margin: 0;
 }
 
 
 .container1 {
   width: 8rem;
-  background-color: red;
   /* display: flex;
   flex-direction: column;
   align-items: center; */
@@ -145,21 +145,19 @@ body {
 }
 
 .container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 9rem;
   padding-right: 0.8rem;
-  background-color: blue;
 }
 
 .container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   padding-left: 1rem;
-  background-color: green;
 }
-
-.spacer {
-  background-color: red;
-  width: 20rem;
-}
-
 
 
 .white-vertical-divider {
@@ -185,7 +183,7 @@ body {
   border-color: white;
   border-radius: 8px;
   font-size: 16px;
-  margin: 0;
+  margin: 0 0 25px 0;
 }
 
 .light-orange-div {
@@ -207,18 +205,29 @@ body {
 .result-value {
   display: flex;
   flex-direction: row;
-  margin: 0;
+  margin: -20px 0 0 0 ;
  
 }
 
 .value-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-right: 1rem;
   margin: 0;
+  line-height: 5px;
+  /* padding-bottom: 10px; */
+
 }
 
 
 .thin-white-writing {
   font-weight: 300;
+}
+
+.total {
+  margin: -5px 0 0 0 ;
 }
 
 
