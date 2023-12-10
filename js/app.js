@@ -29,8 +29,9 @@ console.log(tabletDailyValueSeventyFive);
 
 // Adding listeners to daily dosage buttons and logging value
 //Also checking if buttons have id of clicked and removing if necessary then adding id of clicked to button clicked
+let dailyDose = 0;
 
-function handleDailyDoseClick(e) {
+function handleDailyDoseClick(e, dailyDose) {
 const blueDailyDoseButton = document.getElementById('clicked-daily-dose');
 if (blueDailyDoseButton == null) {
     e.target.setAttribute('id', 'clicked-daily-dose');
@@ -38,9 +39,10 @@ if (blueDailyDoseButton == null) {
     blueDailyDoseButton.removeAttribute('id', 'clicked-daily-dose');
     e.target.setAttribute('id', 'clicked-daily-dose');
 }
-    const dailyDose = e.target.value;
-    console.log(dailyDose);
-    return dailyDose;
+    dailyDose = e.target.dataset.value;
+    dailyDoseInt = parseFloat(dailyDose);
+    console.log(dailyDoseInt);
+    return dailyDoseInt;
 }
 dailyDosagesButtons.forEach(button => button.addEventListener('click', handleDailyDoseClick));
 
@@ -48,8 +50,9 @@ dailyDosagesButtons.forEach(button => button.addEventListener('click', handleDai
 
 //Adding listeners to administer frequency buttons and logging value
 //Also checking if buttons have id of clicked and removing if necessary then adding id of clicked to button clicked
+let adminFrequency = 0;
 
-function handleAdminFrequencyClick(e) {
+function handleAdminFrequencyClick(e, adminFrequency) {
 const blueAdminFrequencyButton = document.getElementById('clicked-admin-freq');
 if (blueAdminFrequencyButton == null) {
     e.target.setAttribute('id', 'clicked-admin-freq');
@@ -57,27 +60,31 @@ if (blueAdminFrequencyButton == null) {
     blueAdminFrequencyButton.removeAttribute('id', 'clicked-admin-freq');
     e.target.setAttribute('id', 'clicked-admin-freq');
 }
-    const adminFrequency = e.target.value;
+    adminFrequency = e.target.value;
     console.log(adminFrequency);
     return adminFrequency;
 }
-
 administerFrequencyButtons.forEach(button => button.addEventListener('click', handleAdminFrequencyClick));
 
 
-//Check two buttons clicked before running function 
-//I think you could do like: 
-// if button1.checked && button2.checked - run calculate total dosage
-// buttons.forEach(button => button.addEventListener('click', handleCalculateTotalDosage));
+//Logic to check two buttons have been clicked before running handler function 
 
 let firstButtonClicked = false;
 let secondButtonClicked = false;
 
-function handler() {
-    firstButtonClicked = false;
-    secondButtonClicked = false;
+function handler(dailyDose, adminFrequency) {
+    // firstButtonClicked = false;
+    // secondButtonClicked = false;
+    let adminFrequencyInt = parseInt(adminFrequency);
+    const totalDosage = dailyDose*adminFrequencyInt;
     console.log('I am the handler function and I have run!');
+    console.log(totalDosage);
 }
+
+//Cant get the handler function to work - can't seem to access the values that
+// are needed to be multiplied together
+
+
 
 dailyDosagesButtons.forEach(button => button.addEventListener('click', ()=>{
     firstButtonClicked = true;
