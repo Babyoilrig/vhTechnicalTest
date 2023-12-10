@@ -1,0 +1,6 @@
+Things I strggled with/learnt:
+
+Styling - giving elements negative margins to minimise whitespace
+Giving an element an id dynamically as it is higher in the 
+specificity order than class
+
