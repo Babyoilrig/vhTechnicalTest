@@ -28,18 +28,14 @@ console.log(tabletDailyValueSeventyFive);
 // Adding listeners to daily dosage buttons and logging value
 
 function handleDailyDoseClick(e) {
-//I think that here i could checked for clicked class 
-//and remove it if there is outline: 
-const blueButton = document.getElementById('clicked');
-if (blueButton == null) {
+const blueDailyDoseButton = document.getElementById('clicked');
+if (blueDailyDoseButton == null) {
     e.target.setAttribute('id', 'clicked');
 } else {
-    blueButton.removeAttribute('id', 'clicked');
+    blueDailyDoseButton.removeAttribute('id', 'clicked');
     e.target.setAttribute('id', 'clicked');
 }
     const dailyDose = e.target.value;
-    // e.target.classList.add('clicked');
-    
     console.log(dailyDose);
 }
 dailyDosagesButtons.forEach(button => button.addEventListener('click', handleDailyDoseClick));
@@ -48,8 +44,14 @@ dailyDosagesButtons.forEach(button => button.addEventListener('click', handleDai
 
 //Adding listeners to administer frequency buttons and logging value
 function handleAdminFrequencyClick(e) {
-    const adminFrequency = e.target.value;
+const blueAdminFrequencyButton = document.getElementById('clicked');
+if (blueAdminFrequencyButton == null) {
     e.target.setAttribute('id', 'clicked');
+} else {
+    blueAdminFrequencyButton.removeAttribute('id', 'clicked');
+    e.target.setAttribute('id', 'clicked');
+}
+    const adminFrequency = e.target.value;
     console.log(adminFrequency);
 }
 
