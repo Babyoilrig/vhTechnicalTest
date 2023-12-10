@@ -122,8 +122,22 @@ function calculateDailyDosage() {
         tabletDaily150 = 3;
             tabletDaily75 = 0;
     }
-    tabletDailyValueOneFifty.textContent = `${tabletDaily150} x`
-    tabletDailyValueSeventyFive.textContent = `${tabletDaily75} x`
+    tabletDailyValueOneFifty.textContent = `${tabletDaily150} x`;
+    tabletDailyValueSeventyFive.textContent = `${tabletDaily75} x`;
+    calculatePrescriptionTotal();
+}
+
+//Calculating prescription total
+tabletTotal150 = 0;
+tabletTotal75 = 0;
+
+function calculatePrescriptionTotal() {
+    console.log("I am the calculatePrescriptionTotal function and I ran!")
+    tabletTotal150 = tabletDaily150 * adminFrequencyInt;
+    tabletTotal75 = tabletDaily75 * adminFrequencyInt;
+    tabletTotalOneFifty.textContent = `${tabletTotal150} x`;
+    tabletTotalSeventyFive.textContent = `${tabletTotal75} x`;
+
 }
 
 
