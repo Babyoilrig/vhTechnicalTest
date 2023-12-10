@@ -60,9 +60,10 @@ if (blueAdminFrequencyButton == null) {
     blueAdminFrequencyButton.removeAttribute('id', 'clicked-admin-freq');
     e.target.setAttribute('id', 'clicked-admin-freq');
 }
-    adminFrequency = e.target.value;
-    console.log(adminFrequency);
-    return adminFrequency;
+    adminFrequency = e.target.dataset.value;
+    adminFrequencyInt = parseFloat(adminFrequency);
+    console.log(adminFrequencyInt);
+    return adminFrequencyInt;
 }
 administerFrequencyButtons.forEach(button => button.addEventListener('click', handleAdminFrequencyClick));
 
