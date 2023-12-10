@@ -80,6 +80,7 @@ function handler() {
     // secondButtonClicked = false;
     totalDosageAmount = dailyDoseInt * adminFrequencyInt;
     console.log('I am the handler function and I have run!');
+    totalDosage.textContent = `${totalDosageAmount}mg`
     console.log(totalDosageAmount);
 }
 // are needed to be multiplied together
