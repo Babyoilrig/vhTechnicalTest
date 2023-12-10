@@ -2,6 +2,9 @@ console.log("It works!");
 
 //Selecting elements
 
+const buttons = document.querySelectorAll('.button');
+console.log(buttons);
+
 const dailyDosagesButtons = document.querySelectorAll('.dosage-div button');
 console.log(dailyDosagesButtons);
 
@@ -65,14 +68,38 @@ administerFrequencyButtons.forEach(button => button.addEventListener('click', ha
 //Check two buttons clicked before running function 
 //I think you could do like: 
 // if button1.checked && button2.checked - run calculate total dosage
+// buttons.forEach(button => button.addEventListener('click', handleCalculateTotalDosage));
+
+let firstButtonClicked = false;
+let secondButtonClicked = false;
+
+function handler() {
+    firstButtonClicked = false;
+    secondButtonClicked = false;
+    console.log('I am the handler function and I have run!');
+}
+
+dailyDosagesButtons.forEach(button => button.addEventListener('click', ()=>{
+    firstButtonClicked = true;
+    if(firstButtonClicked && secondButtonClicked) handler()
+}))
+
+administerFrequencyButtons.forEach(button => button.addEventListener('click', ()=>{
+    secondButtonClicked = true;
+    if(firstButtonClicked && secondButtonClicked) handler()
+}));
+
+
+
+
 
 
 
 //Function to calculate total dosage
-function calculateTotalDosage(dailyDose, adminFrequency) {
-    const totalDosage = dailyDose * adminFrequency;
-    console.log(totalDosage);
-}
+// function handleCalculateTotalDosage(dailyDose, adminFrequency) {
+//     const totalDosage = dailyDose * adminFrequency;
+//     console.log(totalDosage);
+// }
 
 
 
