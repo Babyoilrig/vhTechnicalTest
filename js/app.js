@@ -28,12 +28,12 @@ console.log(tabletDailyValueSeventyFive);
 // Adding listeners to daily dosage buttons and logging value
 
 function handleDailyDoseClick(e) {
-const blueDailyDoseButton = document.getElementById('clicked');
+const blueDailyDoseButton = document.getElementById('clicked-daily-dose');
 if (blueDailyDoseButton == null) {
-    e.target.setAttribute('id', 'clicked');
+    e.target.setAttribute('id', 'clicked-daily-dose');
 } else {
-    blueDailyDoseButton.removeAttribute('id', 'clicked');
-    e.target.setAttribute('id', 'clicked');
+    blueDailyDoseButton.removeAttribute('id', 'clicked-daily-dose');
+    e.target.setAttribute('id', 'clicked-daily-dose');
 }
     const dailyDose = e.target.value;
     console.log(dailyDose);
@@ -44,12 +44,12 @@ dailyDosagesButtons.forEach(button => button.addEventListener('click', handleDai
 
 //Adding listeners to administer frequency buttons and logging value
 function handleAdminFrequencyClick(e) {
-const blueAdminFrequencyButton = document.getElementById('clicked');
+const blueAdminFrequencyButton = document.getElementById('clicked-admin-freq');
 if (blueAdminFrequencyButton == null) {
-    e.target.setAttribute('id', 'clicked');
+    e.target.setAttribute('id', 'clicked-admin-freq');
 } else {
-    blueAdminFrequencyButton.removeAttribute('id', 'clicked');
-    e.target.setAttribute('id', 'clicked');
+    blueAdminFrequencyButton.removeAttribute('id', 'clicked-admin-freq');
+    e.target.setAttribute('id', 'clicked-admin-freq');
 }
     const adminFrequency = e.target.value;
     console.log(adminFrequency);

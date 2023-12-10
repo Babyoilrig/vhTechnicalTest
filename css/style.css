@@ -76,11 +76,18 @@ body {
   color: white; 
 }
 
-#clicked {
+#clicked-daily-dose {
   background-color: #3cb2d2;
   color: white; 
   
 }
+
+#clicked-admin-freq {
+  background-color: #3cb2d2;
+  color: white; 
+}
+
+
 
 .administered-div button {
   border-radius: 50% !important;
