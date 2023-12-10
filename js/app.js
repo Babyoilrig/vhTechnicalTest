@@ -122,46 +122,11 @@ function calculateDailyDosage() {
         tabletDaily150 = 3;
             tabletDaily75 = 0;
     }
+    tabletDailyValueOneFifty.textContent = `${tabletDaily150} x`
+    tabletDailyValueSeventyFive.textContent = `${tabletDaily75} x`
 }
 
-// switch (dailyDoseInt === 0) {
-//     //default case 
-//         default:
-//         break;
-//     //case for 75mg
-//         case 'dailyDoseInt === 75':
-//         tabletDaily150 = 0;
-//         tabletDaily75 = 1;
-//         // console.log("0 x 150mg, 1 x 75mg")
-//         break;
-//     //case for 150mg
-//         case 'dailyDoseInt === 150':
-//         tabletDaily150 = 1;
-//         tabletDaily75 = 0;
-//         break;
-//     //case for 225mg
-//         case 'dailyDoseInt === 225':
-//         tabletDaily150 = 1;
-//         tabletDaily75 = 1;
-//         break;    
-//     //case for 300mg
-//         case 'dailyDoseInt === 300':
-//         tabletDaily150 = 2;
-//         tabletDaily75 = 0;
-//         break;
-//     //case for 375mg
-//         case 'dailyDoseInt === 375':
-//         tabletDaily150 = 2;
-//         tabletDaily75 = 1;
-//         break;    
-//         //case for 450 mg 
-//         case 'dailyDoseInt === 450':
-//         tabletDaily150 = 3;
-//         tabletDaily75 = 0;
-//         break;   
-        
-    
-//     }
+
 
 
 
