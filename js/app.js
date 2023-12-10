@@ -28,14 +28,16 @@ console.log(tabletDailyValueSeventyFive);
 // Adding listeners to daily dosage buttons
 
 function handleDailyDoseClick(e) {
-    console.log(e);
+    const dailyDose = e.target.value;
+    console.log(dailyDose);
 }
 dailyDosagesButtons.forEach(button => button.addEventListener('click', handleDailyDoseClick));
 
 
 //Adding listeners to administer frequency buttons
 function handleAdminFrequencyClick(e) {
-    console.log(e);
+    const adminFrequency = e.target.value;
+    console.log(adminFrequency);
 }
 
 administerFrequencyButtons.forEach(button => button.addEventListener('click', handleAdminFrequencyClick));
