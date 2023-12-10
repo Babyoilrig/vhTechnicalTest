@@ -25,16 +25,15 @@ console.log(tabletDailyValueSeventyFive);
 
 //Adding event listeners
 
-//I am in the middle this - and it isnt currently 
+// Adding listeners to daily dosage buttons
 
-//Adding listeners to daily dosage buttons
-// dailyDosagesButtons.forEach(function(button) {
-//     button.addEventListener('click', handleDailyDoseClick);
-// });
+function handleDailyDoseClick(e) {
+    console.log(e);
+}
+dailyDosagesButtons.forEach(button => button.addEventListener('click', handleDailyDoseClick));
 
-// function handleDailyDoseClick() {
-//     console.log('I have been clicked!');
-// }
+
+
 
 
 
