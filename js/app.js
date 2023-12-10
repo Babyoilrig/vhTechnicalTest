@@ -33,7 +33,12 @@ function handleDailyDoseClick(e) {
 dailyDosagesButtons.forEach(button => button.addEventListener('click', handleDailyDoseClick));
 
 
+//Adding listeners to administer frequency buttons
+function handleAdminFrequencyClick(e) {
+    console.log(e);
+}
 
+administerFrequencyButtons.forEach(button => button.addEventListener('click', handleAdminFrequencyClick));
 
 
 
