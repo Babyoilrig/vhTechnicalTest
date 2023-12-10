@@ -81,6 +81,7 @@ function handler() {
     totalDosageAmount = dailyDoseInt * adminFrequencyInt;
     console.log('I am the handler function and I have run!');
     totalDosage.textContent = `${totalDosageAmount}mg`
+    calculateDailyDosage();
     console.log(totalDosageAmount);
 }
 // are needed to be multiplied together
@@ -96,16 +97,72 @@ administerFrequencyButtons.forEach(button => button.addEventListener('click', ()
 }));
 
 
+//Calculating daily dose
+let tabletDaily150 = 0;
+let tabletDaily75 = 0;
 
+function calculateDailyDosage() {
+    console.log("I am the calculateDailyDosage function and I ran!")
+    if(dailyDoseInt === 75){
+        tabletDaily150 = 0;
+        tabletDaily75 = 1;
+    } else if(dailyDoseInt === 150){
+        tabletDaily150 = 1;
+        tabletDaily75 = 0;
+    } else if(dailyDoseInt === 225){
+        tabletDaily150 = 1;
+        tabletDaily75 = 1;
+    } else if(dailyDoseInt === 300){
+        tabletDaily150 = 2;
+        tabletDaily75 = 0; 
+    } else if(dailyDoseInt === 375){
+        tabletDaily150 = 2;
+        tabletDaily75 = 1;
+    } else {
+        tabletDaily150 = 3;
+            tabletDaily75 = 0;
+    }
+}
 
+// switch (dailyDoseInt === 0) {
+//     //default case 
+//         default:
+//         break;
+//     //case for 75mg
+//         case 'dailyDoseInt === 75':
+//         tabletDaily150 = 0;
+//         tabletDaily75 = 1;
+//         // console.log("0 x 150mg, 1 x 75mg")
+//         break;
+//     //case for 150mg
+//         case 'dailyDoseInt === 150':
+//         tabletDaily150 = 1;
+//         tabletDaily75 = 0;
+//         break;
+//     //case for 225mg
+//         case 'dailyDoseInt === 225':
+//         tabletDaily150 = 1;
+//         tabletDaily75 = 1;
+//         break;    
+//     //case for 300mg
+//         case 'dailyDoseInt === 300':
+//         tabletDaily150 = 2;
+//         tabletDaily75 = 0;
+//         break;
+//     //case for 375mg
+//         case 'dailyDoseInt === 375':
+//         tabletDaily150 = 2;
+//         tabletDaily75 = 1;
+//         break;    
+//         //case for 450 mg 
+//         case 'dailyDoseInt === 450':
+//         tabletDaily150 = 3;
+//         tabletDaily75 = 0;
+//         break;   
+        
+    
+//     }
 
-
-
-//Function to calculate total dosage
-// function handleCalculateTotalDosage(dailyDose, adminFrequency) {
-//     const totalDosage = dailyDose * adminFrequency;
-//     console.log(totalDosage);
-// }
 
 
 
