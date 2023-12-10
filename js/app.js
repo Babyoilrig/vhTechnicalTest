@@ -23,9 +23,9 @@ console.log(tabletDailyValueOneFifty);
 const tabletDailyValueSeventyFive = document.querySelector('.tablet-daily-value-75');
 console.log(tabletDailyValueSeventyFive);
 
-//Adding event listeners
 
 // Adding listeners to daily dosage buttons and logging value
+//Also checking if buttons have id of clicked and removing if necessary then adding id of clicked to button clicked
 
 function handleDailyDoseClick(e) {
 const blueDailyDoseButton = document.getElementById('clicked-daily-dose');
@@ -37,12 +37,15 @@ if (blueDailyDoseButton == null) {
 }
     const dailyDose = e.target.value;
     console.log(dailyDose);
+    return dailyDose;
 }
 dailyDosagesButtons.forEach(button => button.addEventListener('click', handleDailyDoseClick));
 
 
 
 //Adding listeners to administer frequency buttons and logging value
+//Also checking if buttons have id of clicked and removing if necessary then adding id of clicked to button clicked
+
 function handleAdminFrequencyClick(e) {
 const blueAdminFrequencyButton = document.getElementById('clicked-admin-freq');
 if (blueAdminFrequencyButton == null) {
@@ -53,6 +56,7 @@ if (blueAdminFrequencyButton == null) {
 }
     const adminFrequency = e.target.value;
     console.log(adminFrequency);
+    return adminFrequency;
 }
 
 administerFrequencyButtons.forEach(button => button.addEventListener('click', handleAdminFrequencyClick));
@@ -65,10 +69,10 @@ administerFrequencyButtons.forEach(button => button.addEventListener('click', ha
 
 
 //Function to calculate total dosage
-// function calculateTotalDosage(dailyDose, adminFrequency) {
-//     const totalDosage = dailyDose * adminFrequency;
-//     console.log(totalDosage);
-// }
+function calculateTotalDosage(dailyDose, adminFrequency) {
+    const totalDosage = dailyDose * adminFrequency;
+    console.log(totalDosage);
+}
 
 
 
