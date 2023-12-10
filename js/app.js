@@ -73,13 +73,14 @@ administerFrequencyButtons.forEach(button => button.addEventListener('click', ha
 let firstButtonClicked = false;
 let secondButtonClicked = false;
 
-function handler(dailyDose, adminFrequency) {
+let totalDosageAmount = 0;
+
+function handler(dailyDoseInt, adminFrequencyInt) {
     // firstButtonClicked = false;
     // secondButtonClicked = false;
-    let adminFrequencyInt = parseInt(adminFrequency);
-    const totalDosage = dailyDose*adminFrequencyInt;
+    // totalDosageAmount = dailyDoseInt * adminFrequencyInt;
     console.log('I am the handler function and I have run!');
-    console.log(totalDosage);
+    console.log(totalDosageAmount);
 }
 
 //Cant get the handler function to work - can't seem to access the values that
