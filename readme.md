@@ -1,6 +1,10 @@
 # Dosage Calculator
 ## This repository contains a dosage calculator I created for the following brief:
 
+***
+
+The contents of this repository are provided to give you the foundation to build a Dosage calculator for a fictitious Pharmaceutical company.
+
 ### Dosage Calculator
 ACME Pharmaceutical LTD require a dosage calculator tool that will provide support and guidance to healthcare professionals (HCP) on how to achieve the intended daily dose of their new drug Galanpirox.
 
@@ -15,6 +19,8 @@ The total prescription is the total amount of Galanpirox taken over the specifie
 The prescription total is the total number of Galanpirox tablets for each size over the specified time period.
 
 The daily dose is the total number of Galanpirox tablets for each size for 1 day.
+
+[A Figma design](https://www.figma.com/proto/hL2TAElP4z9nRDVuW4DxLK/HTML-Technical-Test?page-id=0%3A1&type=design&node-id=1-3&viewport=459%2C465%2C0.68&t=L0ILJeKctoTIloc5-1&scaling=min-zoom&mode=design) has been created which you should aim for.
 
 ### Example
 
