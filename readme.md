@@ -1,7 +1,7 @@
-### Dosage Calculator
-# This repository contains a dosage calculator I created for the following brief:
+# Dosage Calculator
+## This repository contains a dosage calculator I created for the following brief:
 
-## Dosage Calculator
+### Dosage Calculator
 ACME Pharmaceutical LTD require a dosage calculator tool that will provide support and guidance to healthcare professionals (HCP) on how to achieve the intended daily dose of their new drug Galanpirox.
 
 Galanpirox comes in two tablet sizes: 75mg and 150mg and must be taken for a period of 7 to 14 days.
