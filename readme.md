@@ -36,3 +36,34 @@ A daily dose of 375mg for 8 days should calculate the following values:
 **Prescription total:** 16 x 150mg, 8 x 75mg
 
 **Daily dose:** 2 x 150mg, 1 x 75mg
+
+
+It contains information on my individual background, journey, skills and CV etc.
+
+I created this project using Next.JS, Tailwind CSS and some CSS3.
+
+I chose to build the project using Next.js, as I had not used it before – in order to learn more about it (and also because I enjoy a new challenge).
+
+NB - This is my second attempt at building this portfolio. I originally created it using Next.js, Next UI and CSS - but unfortunately I was having difficulty with mobile compatibility. The original repo can be viewed [HERE](https://github.com/Babyoilrig/CatrinMentzoni-Portfolio)
+
+
+**Author**
+--------------
+
+[@CatrinMentzoni](https://github.com/Babyoilrig)
+ 
+**Installation**
+-----------------
+
+**To run this app:**
+<br/><br/>
+Clone down this repository using an IDE such as VS Code.
+<br/><br/>
+CD into vistahealth-technicaltest
+<br/><br/>
+Next, right click and 'Copy path' from index.html. Paste this into the browser and you will be able to view the app.
+<br/><br/>
+ 
+**Feedback**
+-----------------
+If you have any feedback, please raise an issue in the issues tab or reach out to me at [@Babyoilrig](https://github.com/Babyoilrig) here on Github or on LinkedIn: [@CatrinMentzoni](https://www.linkedin.com/in/catrin-mentzoni/) 
