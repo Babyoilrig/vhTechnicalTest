@@ -1,5 +1,10 @@
 # Dosage Calculator
-## This repository contains a dosage calculator I created for the following brief:
+## This repository contains a dosage calculator I created based on the brief below.
+
+![Galinpirox calculator](https://github.com/Babyoilrig/vhTechnicalTest/assets/93347177/3a0d8bab-a989-40a4-b551-c720fbb1543f)
+
+
+
 The hosted version of this application can be viewed [here:](https://animated-sorbet-56b6ef.netlify.app/)
 ***
 
